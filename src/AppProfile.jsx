@@ -3,8 +3,13 @@ import Avatar from './components/Avatar';
 import Profile from './components/Profile';
 
 function AppProfile() {
+  const handleClick = e => {
+    console.log(e);
+    alert('Clicked Button');
+  };
   return (
     <>
+      <button onClick={handleClick}>버튼</button>
       <Avatar
         image="https://images.unsplash.com/photo-1676369134323-d19cf8bb3a25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
         isNew={true}
